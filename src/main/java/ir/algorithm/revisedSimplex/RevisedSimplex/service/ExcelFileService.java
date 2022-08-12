@@ -1,4 +1,6 @@
 package ir.algorithm.revisedSimplex.RevisedSimplex.service;
 
-public interface ExcelFileService extends FileService {
+import ir.algorithm.revisedSimplex.RevisedSimplex.model.ExcelFile;
+
+public interface ExcelFileService extends FileService<ExcelFile> {
 }

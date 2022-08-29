@@ -19,7 +19,7 @@ import java.util.List;
 @Service
 public class ExcelFileServiceImpl implements ExcelFileService {
 
-    private static final Matrices matrix = new Matrices();
+    private Matrices matrix;
     private static XSSFWorkbook workbook = null;
 
     @Override
@@ -32,6 +32,7 @@ public class ExcelFileServiceImpl implements ExcelFileService {
         if (workbook == null) {
             throw new EmptyFileException();
         }
+        this.matrix = new Matrices();
         iteratorThroughWorksheets();
         startCalculating();
     }

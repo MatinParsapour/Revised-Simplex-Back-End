@@ -12,8 +12,8 @@ import java.util.*;
 public class Matrices {
 
     private final List<Double> coefficientsOfTargetFunction = new LinkedList<>();
-    private List<Double> basicVariablesInTargetFunction;
-    private List<Double> nonBasicVariablesInTargetFunction;
+    private List<Double> basicVariablesInTargetFunction = new LinkedList<>();
+    private List<Double> nonBasicVariablesInTargetFunction = new LinkedList<>();
     private final List<List<Double>> coefficientsOfConstraints = new LinkedList<>();
     private final List<Double> coefficientsOfResults = new LinkedList<>();
     private Map<Integer, List<Double>> basicVariables = new TreeMap<>();
